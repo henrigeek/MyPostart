@@ -7,7 +7,8 @@ from photo import views
 
 urlpatterns = patterns('',
     url(r'^polls/', include('polls.urls', namespace = "polls")),
-    url(r'^photo/', include('photo.urls', namespace = "photo")),
+    #url(r'^photo/', include('photo.urls', namespace = "photo")),
+    url(r'^postart/', include('postart.urls', namespace = "postart")),
     url(r'^signups/',include('signups.urls', namespace = "signups")),
     url(r'^accounts/login/$', 'django.contrib.auth.views.login', name = 'mysite_login'),
     url(r'^accounts/logout/$', views.logout_view, name='mysite_logout'),
