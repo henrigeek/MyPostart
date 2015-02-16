@@ -136,10 +136,18 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'userfiles')
 MEDIA_URL = '/photos/'
 
+PROJECT_DIR = os.path.dirname(__file__) # this is not Django setting.
 TEMPLATE_DIRS = (
-    os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)), "static", "templates"),
-    
+    os.path.join(PROJECT_DIR, "static","templates"),
+    # here you can add another templates directory if you wish.
 )
+
+
+
+#TEMPLATE_DIRS = (
+#   os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)), "static", "templates"),
+    
+#)
 
 if DEBUG:
     MEDIA_URL='/media/'
