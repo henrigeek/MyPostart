@@ -65,7 +65,7 @@ INSTALLED_APPS = (
     'polls',
     'photo',
     'signups',
-    'debug_toolbar',
+    #'debug_toolbar',
     'easy_thumbnails',
     'easy_thumbnails.optimize',
     #'south',
