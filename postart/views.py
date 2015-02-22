@@ -8,11 +8,11 @@ from django.http import HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
 from django.contrib import auth
 from django.utils.decorators import method_decorator
-from boto.s3.connection import S3Connections
-from boto.S3.key import Key
-conn = S3Connection(ACCESS_KEY,SECRET_KEY)
-
-bucket = conn.create_bucket('postartnyc')
+from django.core.files.storage import default_storage
+#from boto.s3.connection import S3Connections
+#from boto.S3.key import Key
+#conn = S3Connection(ACCESS_KEY,SECRET_KEY)
+#bucket = conn.create_bucket('postartnyc')
 
 def logout_view(request):
     auth.logout(request)
