@@ -11,7 +11,7 @@ from django.utils.decorators import method_decorator
 from django.core.files.storage import default_storage
 from boto.s3.connection import S3Connection
 from boto.s3.key import Key
-conn = S3Connection(ACCESS_KEY,SECRET_KEY)
+conn = S3Connection()
 bucket = conn.create_bucket('postartnyc')
 
 
