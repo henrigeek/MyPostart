@@ -1,5 +1,5 @@
   <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!-- Version avec les liens -->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,6 +35,7 @@
     
 <!-- NAVBAR - Cf. CSS associated
 ================================================== -->
+  
   <div class=header>
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -47,17 +48,8 @@
               
             </div>
             <div class="col-md-6 col-sm-6 col-xs-6">
-              <button type="button">
-          {% if not user.is_authenticated %}
-          <h2 class="text-center"><a href="{% url "mysite_login" %}">Sign In</a></h2> 
-          {% block content %}
-          {%endblock%}
-          </button>
-          <button type="button" id="inscription" class="btn btn-default navbar-btn pull-right"> <a  href = "signup/"> Sign up </a></button>  
-          {% else %}
-          <h2 class="text-center"><a {{ user.username }} </a></h2>
-          <h2 class="text-center"><a href="{% url "mysite_logout" %}">Sign Out</a></h2>
-          {% endif %}  
+              <button type="button" id="connexion" class="btn btn-default navbar-btn pull-right">Sign in</button>  
+              <button type="button" id="inscription" class="btn btn-default navbar-btn pull-right" >Sign up</button>  
             </div>
         </div> 
         
@@ -151,14 +143,14 @@
             </div>
             <div class="col-md-1"> </div>
             <div class="col-md-3">
-              <img class="featurette-image img-responsive" src="/static/Images/Photo_profile_molka.png" alt="Generic placeholder image 1">
+              <img class="featurette-image img-responsive" src="static/Images/Photo_profile_molka.png" alt="Generic placeholder image 1">
             </div>
           </div>
   
         <hr class="featurette-divider">
           <div class="row featurette">
             <div class="col-md-3">
-              <img class="featurette-image img-responsive" src="/static/Images/Photo_profile_bat.png" alt="Generic placeholder image">
+              <img class="featurette-image img-responsive" src="static/Images/Photo_profile_bat.png" alt="Generic placeholder image">
             </div>
             <div class="col-md-1"> </div>
             <div class="col-md-8">
