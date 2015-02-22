@@ -10,9 +10,10 @@ from django.contrib import auth
 from django.utils.decorators import method_decorator
 from django.core.files.storage import default_storage
 from boto.s3.connection import S3Connection
-from boto.S3 import Key
 conn = S3Connection(ACCESS_KEY,SECRET_KEY)
 bucket = conn.create_bucket('postartnyc')
+from boto.s3.key import Key
+
 
 def logout_view(request):
     auth.logout(request)
