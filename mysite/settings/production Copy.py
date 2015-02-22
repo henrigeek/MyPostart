@@ -7,8 +7,8 @@ TEMPLATE_DEBUG = False
 DATABASES = settings.DATABASES
 
 
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
-STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage' # to allow admin collectstatic to put files in bucket
+
+
 
 # Parse database configuration from $DATABASE_URL
 import dj_database_url
@@ -24,12 +24,8 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Allow all host headers
 ALLOWED_HOSTS = ['*']
-
-# AWS settings
 ACCESS_KEY ='AKIAIL25OMLAD6FEOO6A'
 SECRET_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'postart-main'
-
 
 # Static asset configuration
 import os

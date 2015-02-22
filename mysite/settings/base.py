@@ -65,6 +65,7 @@ INSTALLED_APPS = (
     'polls',
     #'photo',
     'postart',
+    'storages',
     'signups',
     #'debug_toolbar',
     'easy_thumbnails',
@@ -129,7 +130,8 @@ USE_L10N = True
 
 USE_TZ = True
 
-
+ACCESS_KEY ='AKIAIL25OMLAD6FEOO6A'
+SECRET_KEY = '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'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
