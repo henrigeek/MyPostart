@@ -116,6 +116,19 @@ CACHES = {
     }
 }
 
+S3_signal = True
+
+if S3_signal:
+    DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+    STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage' # to allow admin collectstatic to put files in bucket
+    DATABASE_ENGINE = 'sqlite 3'
+    DATABASE_NAME = 'aws.db'
+    # AWS settings
+    ACCESS_KEY ='AKIAIL25OMLAD6FEOO6A'
+    SECRET_KEY = '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'
+    AWS_STORAGE_BUCKET_NAME = 'postart-main'
+
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
