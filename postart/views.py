@@ -14,7 +14,6 @@ conn = S3Connection(ACCESS_KEY,SECRET_KEY)
 bucket = conn.create_bucket('postartnyc')
 from boto.s3.key import Key
 
-
 def logout_view(request):
     auth.logout(request)
     # Redirect to a success page.
