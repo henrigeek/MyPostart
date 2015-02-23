@@ -9,11 +9,10 @@ from django.contrib.auth.decorators import login_required
 from django.contrib import auth
 from django.utils.decorators import method_decorator
 from django.core.files.storage import default_storage
-from boto.s3.connection import S3Connection
-from boto.s3.key import Key
-from boto import boto
-conn = boto.connect_s3('<aws_access_key_id>','<aws_secret_access_key>')
-bucket = conn.create_bucket('postartnyc')
+#from boto.s3.connection import S3Connection
+#from boto.s3.key import Key
+#conn = S3Connection('<aws_access_key_id>','<aws_secret_id_key>')
+#bucket = conn.create_bucket('postartnyc')
 
 
 
@@ -70,8 +69,8 @@ class ListImage(ListView):
 
 class TopImage(ListView):
     queryset= Image.objects.order_by('-title')[:10]
-    template_name = 'top_pictures.html'
-
+    #template_name = 'top_pictures.html'
+    template_name = 'account.html'
 
 class AuthorCreate(CreateView):
     def get_success_url(self):

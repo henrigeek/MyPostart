@@ -124,7 +124,7 @@ if S3_signal:
     DATABASE_ENGINE = 'sqlite 3'
     DATABASE_NAME = 'aws.db'
     # AWS settings
-    aws_access_key_id ='AKIAIL25OMLAD6FEOO6A'
+    aws_access_key_id ='AKIAIL25OMLAD6FEOO6A' 
     aws_secret_access_key = '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'
     AWS_STORAGE_BUCKET_NAME = 'postart-main'
     AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
