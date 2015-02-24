@@ -1,5 +1,5 @@
   <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!-- Version avec les liens -->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
     <title>Postart NYC</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/static/Bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -21,12 +21,12 @@
 
     <!-- Custom styles for this template by GUIGUI -->
     
-    <link href=/static/css/frontpage.css rel="stylesheet"> <!--Regles generales pour la page-->
-    <link href=/static/css/navbar.css rel="stylesheet"> <!-- Customisation de la navbar-->
-    <link href=/static/css/section-signing.css rel="stylesheet"> <!--Customisation de la section-signing-->
-    <link href=/static/css/temoignages.css rel="stylesheet"> <!--Customisation des zones how it works et molka&co-->
-    <link href=/static/css/gallery.css rel="stylesheet"> <!--Customisation de la galerie de photos-->
-    <link href=/static/css/footer.css rel="stylesheet"> <!--Customisation du footer -->
+    <link href=static/css/frontpage.css rel="stylesheet"> <!--Regles generales pour la page-->
+    <link href=static/css/navbar.css rel="stylesheet"> <!-- Customisation de la navbar-->
+    <link href=static/css/section-signing.css rel="stylesheet"> <!--Customisation de la section-signing-->
+    <link href=static/css/temoignages.css rel="stylesheet"> <!--Customisation des zones how it works et molka&co-->
+    <link href=static/css/gallery.css rel="stylesheet"> <!--Customisation de la galerie de photos-->
+    <link href=static/css/footer.css rel="stylesheet"> <!--Customisation du footer -->
     
   </head>
 
@@ -35,6 +35,7 @@
     
 <!-- NAVBAR - Cf. CSS associated
 ================================================== -->
+  
   <div class=header>
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -47,17 +48,8 @@
               
             </div>
             <div class="col-md-6 col-sm-6 col-xs-6">
-              <button type="button">
-          {% if not user.is_authenticated %}
-          <h2 class="text-center"><a href="{% url "mysite_login" %}">Sign In</a></h2> 
-          {% block content %}
-          {%endblock%}
-          </button>
-          <button type="button" id="inscription" class="btn btn-default navbar-btn pull-right"> <a  href = "signup/"> Sign up </a></button>  
-          {% else %}
-          <h2 class="text-center"><a {{ user.username }} </a></h2>
-          <h2 class="text-center"><a href="{% url "mysite_logout" %}">Sign Out</a></h2>
-          {% endif %}  
+              <button type="button" id="connexion" class="btn btn-default navbar-btn pull-right">Sign in</button>  
+              <button type="button" id="inscription" class="btn btn-default navbar-btn pull-right" >Sign up</button>  
             </div>
         </div> 
         
@@ -151,14 +143,14 @@
             </div>
             <div class="col-md-1"> </div>
             <div class="col-md-3">
-              <img class="featurette-image img-responsive" src="/static/Images/Photo_profile_molka.png" alt="Generic placeholder image 1">
+              <img class="https://s3-us-west-2.amazonaws.com/static-pictures/Photo_profile_molka.png" alt="Generic placeholder image 1">
             </div>
           </div>
   
         <hr class="featurette-divider">
           <div class="row featurette">
             <div class="col-md-3">
-              <img class="featurette-image img-responsive" src="/static/Images/Photo_profile_bat.png" alt="Generic placeholder image">
+              <img class="featurette-image img-responsive" src="https://s3-us-west-2.amazonaws.com/static-pictures/Photo_profile_bat.png" alt="Generic placeholder image">
             </div>
             <div class="col-md-1"> </div>
             <div class="col-md-8">
@@ -260,9 +252,9 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="bootstrap/dist/js/docs.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/docs.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="bootstrap/dist/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="bootstrap/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
