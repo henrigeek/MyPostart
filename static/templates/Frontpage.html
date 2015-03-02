@@ -1,4 +1,6 @@
   <!DOCTYPE html>
+  {% load static from staticfiles %}  
+    
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -11,7 +13,7 @@
     <title>Postart NYC</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/static/Bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static 'Bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -21,12 +23,12 @@
 
     <!-- Custom styles for this template by GUIGUI -->
     
-    <link href=/static/css/frontpage.css rel="stylesheet"> <!--Regles generales pour la page-->
-    <link href=/static/css/navbar.css rel="stylesheet"> <!-- Customisation de la navbar-->
-    <link href=/static/css/section-signing.css rel="stylesheet"> <!--Customisation de la section-signing-->
-    <link href=/static/css/temoignages.css rel="stylesheet"> <!--Customisation des zones how it works et molka&co-->
-    <link href=/static/css/gallery.css rel="stylesheet"> <!--Customisation de la galerie de photos-->
-    <link href=/static/css/footer.css rel="stylesheet"> <!--Customisation du footer -->
+    <link href="{% static 'css/frontpage.css' %}" rel="stylesheet"> <!--Regles generales pour la page-->
+    <link href="{% static 'css/navbar.css' %}" rel="stylesheet"> <!-- Customisation de la navbar-->
+    <link href="{% static 'css/section-signing.css' %}" rel="stylesheet"> <!--Customisation de la section-signing-->
+    <link href="{% static 'css/temoignages.css' %}" rel="stylesheet"> <!--Customisation des zones how it works et molka&co-->
+    <link href="{% static 'css/gallery.css' %}" rel="stylesheet"> <!--Customisation de la galerie de photos-->
+    <link href="{% static 'css/footer.css' %}" rel="stylesheet"> <!--Customisation du footer -->
     
   </head>
 
@@ -151,7 +153,7 @@
             </div>
             <div class="col-md-1"> </div>
             <div class="col-md-3">
-              <img class="featurette-image img-responsive" src="/static/Images/Photo_profile_molka.png" alt="Generic placeholder image 1">
+              <img class="featurette-image img-responsive" src="{% static 'img/Photo_profile_molka.png' %}" alt="Generic placeholder image 1">
             </div>
           </div>
   

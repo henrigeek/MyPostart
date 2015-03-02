@@ -116,18 +116,18 @@ CACHES = {
     }
 }
 
-S3_signal = True
+#S3_signal = True
 
-if S3_signal:
-    DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
-    STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage' # to allow admin collectstatic to put files in bucket
-    DATABASE_ENGINE = 'sqlite 3'
-    DATABASE_NAME = 'aws.db'
+#if S3_signal:
+    #DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+    #STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage' # to allow admin collectstatic to put files in bucket
+    #DATABASE_ENGINE = 'sqlite 3'
+    #DATABASE_NAME = 'aws.db'
     # AWS settings
-    aws_access_key_id ='AKIAIL25OMLAD6FEOO6A' 
-    aws_secret_access_key = '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'
-    AWS_STORAGE_BUCKET_NAME = 'postart-main'
-    AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+    #aws_access_key_id ='AKIAIL25OMLAD6FEOO6A' 
+    #aws_secret_access_key = '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'
+    #AWS_STORAGE_BUCKET_NAME = 'postart-main'
+    #AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 
 
 
