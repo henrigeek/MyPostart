@@ -67,6 +67,7 @@ INSTALLED_APPS = (
     'postart',
     'storages',
     'signups',
+    'boto',
     #'debug_toolbar',
     'easy_thumbnails',
     'easy_thumbnails.optimize',
