@@ -33,6 +33,13 @@ STATICFILES_LOCATION = 'static'
 AWS_S3_HOST = 's3.amazonaws.com'
 STATIC_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, STATICFILES_LOCATION)
 #STATIC_URL = "https://%s/" % AWS_S3_CUSTOM_DOMAIN
+
+MEDIAFILES_LOCATION = 'media'
+MEDIA_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, MEDIAFILES_LOCATION)
+DEFAULT_FILE_STORAGE = 'mysite.custom_storages.MediaStorage'
+
+
+
 # Static asset configuration
 
 
