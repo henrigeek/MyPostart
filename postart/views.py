@@ -70,7 +70,7 @@ class ListImage(ListView):
 class TopImage(ListView):
     queryset= Image.objects.order_by('-title')[:10]
     #template_name = 'top_pictures.html'
-    template_name = 'account.html'
+    template_name = 'Frontpage.html'
 
 class AuthorCreate(CreateView):
     def get_success_url(self):
