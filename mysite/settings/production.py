@@ -27,12 +27,12 @@ AWS_STORAGE_BUCKET_NAME = 'postart-main'
 AWS_ACCESS_KEY_ID ='AKIAJYOI2ZJK4ADBSUGA'
 AWS_SECRET_ACCESS_KEY='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'
 AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
-STATIC_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, STATICFILES_LOCATION)
-#STATIC_URL = "https://%s/" % AWS_S3_CUSTOM_DOMAIN
 STATICFILES_STORAGE = 'custom_storages.StaticStorage'
 #STATICFILES_STORAGE ='storages.backends.s3boto.S3BotoStorage'
 STATICFILES_LOCATION = 'static'
 AWS_S3_HOST = 's3.amazonaws.com'
+STATIC_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, STATICFILES_LOCATION)
+#STATIC_URL = "https://%s/" % AWS_S3_CUSTOM_DOMAIN
 # Static asset configuration
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
