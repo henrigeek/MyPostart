@@ -1,0 +1,32 @@
+
+
+.profile-desc
+{
+	margin-top:70px;
+}
+
+
+.profile-font
+
+{
+  padding-top:150px;
+  height:400px;
+
+ background: url(http://pixabay.com/static/uploads/photo/2015/01/15/07/13/skyline-600001_640.jpg) no-repeat center center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+  
+ 
+  text-align:center;
+  color:#27292D;
+  text-decoration:blink;
+  /*opacity:0.9;*/
+ 
+}
+
+/*.profile-font h1
+{
+	font-size:2em;
+}*/
