@@ -47,5 +47,24 @@
 #inscription
 {
     background-color:#60A969;
+    color:white;
 }
 
+#inscription:hover
+{
+    background-color:#60A969;
+    color:white;
+    opacity:0.5;
+}
+
+#connexion
+{
+    opacity: 1;
+    color:white;
+}
+
+#connexion:hover
+{
+    opacity: 0.5;
+    color:white;
+}
